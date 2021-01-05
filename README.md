@@ -26,10 +26,10 @@ The present research utilized the Kaggle King County data set to train a linear 
 
 I like to continually develop my coding skill set and am currently expanding my knowledge and experience in a variety of languages
 - Python (and it's associated data science libraries)
-- C 
-- Javascript
 - SQL
+- C 
 - Octave/Matlab
+- Javascript
 - HTML
 - CSS
 

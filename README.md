@@ -22,7 +22,7 @@ In late 2019, the world was hit by the Sars-Covid-2. To prevent the spread of th
 - The older the house hold primary earner was the more likely they were to become unemployed.
 - Interestingly, the industry had people worked had little bearing on the probability of them becoming unemployed.
 
-### [King County (Seattle) Housing Price Predictions](https://github.com/SlimHintz/King-County-Housing)
+### [King County Housing Price Predictions](https://github.com/SlimHintz/King-County-Housing)
 
 The present research utilized the Kaggle King County data set to train a linear regression model of housing prices in that region. The model generated 420 features via interactions and polynomial columns as well as some non-linear transformations of the square footage columns. In particular, I utilized geohashing to increase the spatial resolution beyond zipcode and create a more accurate prediction. 
 

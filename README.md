@@ -1,3 +1,5 @@
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
+
 ## Hello, World! 
 
 I am an aspiring data scientist with a background in Neuroscience and a passion for problem solving and solution oriented thinking. I work part time as a technical coordinator for the Machine Commons, a cooperative of boutique machine learning providers but I am looking to transition into an analyst/data scientist role.

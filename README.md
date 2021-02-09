@@ -9,7 +9,7 @@ I am an aspiring data scientist with a background in Neuroscience and a passion 
 
 ###  [Bait 'n' Switch](https://github.com/SlimHintz/bait-n-switch)
 
-I analysed three, manually labelled clickbait datasets using natural language processing. Utilizing tf-idf and naive bayes I was able to train a fast, light-weight, and powerful statistical model that identifies clickbait with 98% accuracy. Using flask and gunicorn, I hosted the model on a heroku server and set up a POST API endpoint. Then, using bootstrap's precompiled destributions of NODE.js and CSS I created a simple front end [web application](https://baitnswitch.herokuapp.com/predict). 
+I analysed three, manually labelled clickbait datasets using natural language processing. Utilizing tf-idf and naive bayes I was able to train a fast, light-weight, and powerful statistical model that identifies clickbait with ~90% accuracy. Using flask and gunicorn, I hosted the model on a heroku server and set up a POST API endpoint. Then, using bootstrap's precompiled destributions of NODE.js and CSS I created a simple front end [web application](https://baitnswitch.herokuapp.com/predict). 
 
 ### [Pediatric Pneuomonia Chest X-Ray Image Classification](https://github.com/SlimHintz/Pneumonia-image-classification)
 

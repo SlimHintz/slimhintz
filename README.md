@@ -2,15 +2,19 @@
 
 I'm a data scientist and ML engineer who builds fraud detection end to end: entity-level features, supervised and unsupervised models, monitoring, and the write-ups that turn scores into decisions.
 
+My approach is data-centric and interpretable. Better data usually beats a bigger model, and a fraud score is only worth acting on if someone can explain why it fired.
+
 I'm a Data Science & Analytics Manager at Voyatek, working as a federal consultant on income-document fraud detection. The work runs on Databricks with PySpark, MLflow, Delta Lake and Unity Catalog in an air-gapped environment, so that code stays behind the wall. What's here is the work I can share.
 
 **What I care about**
 
-- Models that hold up in practice: reproducible inputs, drift monitoring, and catching silent bugs before they reach a decision.
-- Fraud and risk problems where the entity matters more than the single transaction.
-- Putting modern AI tooling to work. I run my own MCP servers on a Raspberry Pi and use them with Claude every day.
+- **Data-centric ML:** most of the gains come from the data rather than the algorithm. That means clean entity resolution, point-in-time features without leakage, honest labels and reproducible inputs.
+- **Interpretable models:** rule-based and additive models, SHAP explanations, and reason codes an investigator can act on and an auditor can follow. That's why I maintain a RuleFit fork and wrote transpyrancy.
+- **Models that hold up in practice:** drift monitoring, and catching silent bugs before they reach a decision.
+- **Entity-level fraud:** problems where the entity matters more than the single transaction.
+- **Modern AI tooling:** I run my own MCP servers on a Raspberry Pi and use them with Claude every day.
 
-**Stack:** Python, PySpark, SQL, XGBoost, scikit-learn, PyOD, MLflow, Delta Lake, Databricks. Before Databricks: large-scale SQL on Greenplum (MPP Postgres), and a lot of work on Unix/Linux servers with bash and Docker, building custom reproducible environments.
+**Stack:** Python, PySpark, SQL, XGBoost, scikit-learn, SHAP, PyOD, MLflow, Delta Lake, Databricks. Before Databricks: large-scale SQL on Greenplum (MPP Postgres), and a lot of work on Unix/Linux servers with bash and Docker, building custom reproducible environments.
 
 **Background:** neuroscience at the University of Otago (BSc Hons, First Class), then Flatiron School's data science program. Kiwi, based in metro Detroit.
 
@@ -20,6 +24,7 @@ I'm a Data Science & Analytics Manager at Voyatek, working as a federal consulta
 - **[kitchen-inventory-mcp](https://github.com/SlimHintz/kitchen-inventory-mcp)**: a household inventory MCP server where the server keeps the books and the model does the reasoning. It covers fuzzy entity matching, duplicate detection, recipe coverage scoring and first-expiring-first-out depletion, on SQLAlchemy and Alembic.
 - **[garmin-strava-mcp](https://github.com/SlimHintz/garmin-strava-mcp)**: a secured MCP server and REST API over my own Garmin and Strava data (OAuth 2.1 + PKCE, rate limiting), with a SQLite training log, which I use for marathon-training analysis.
 - **[rulefit](https://github.com/SlimHintz/rulefit)**: my fork of RuleFit, modularized and updated for scikit-learn 1.8, with rule extraction, benchmarks and tests. Interpretable rule models are a good fit for fraud work.
+- **[transpyrancy](https://github.com/SlimHintz/transpyrancy)**: SHAP explainability with an opinionated API. It picks the right explainer for the model and returns one result object with per-row and aggregate explanations and built-in plots. 154 tests.
 
 ### Earlier work
 

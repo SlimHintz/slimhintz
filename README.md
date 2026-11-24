@@ -10,7 +10,7 @@ I'm a Data Science & Analytics Manager at Voyatek, working as a federal consulta
 - Fraud and risk problems where the entity matters more than the single transaction.
 - Putting modern AI tooling to work. I run my own MCP servers on a Raspberry Pi and use them with Claude every day.
 
-**Stack:** Python, PySpark, SQL, XGBoost, scikit-learn, PyOD, MLflow, Delta Lake, Databricks
+**Stack:** Python, PySpark, SQL, XGBoost, scikit-learn, PyOD, MLflow, Delta Lake, Databricks. Before Databricks: large-scale SQL on Greenplum (MPP Postgres), and a lot of work on Unix/Linux servers with bash and Docker, building custom reproducible environments.
 
 **Background:** neuroscience at the University of Otago (BSc Hons, First Class), then Flatiron School's data science program. Kiwi, based in metro Detroit.
 

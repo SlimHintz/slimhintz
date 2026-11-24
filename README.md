@@ -1,42 +1,29 @@
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=slimhintz)](https://github.com/anuraghazra/github-readme-stats)
+## Hi, I'm Tim
 
-## About Me. 
+I'm a data scientist and ML engineer who builds fraud detection end to end: entity-level features, supervised and unsupervised models, monitoring, and the write-ups that turn scores into decisions.
 
-I am a data scientist currently working in fraud analytics where I lead teams in finding and deterring identity theft. I have a background in Neuroscience and a passion for problem solving and solution oriented thinking. 
+I'm a Data Science & Analytics Manager at Voyatek, working as a federal consultant on income-document fraud detection. The work runs on Databricks with PySpark, MLflow, Delta Lake and Unity Catalog in an air-gapped environment, so that code stays behind the wall. What's here is the work I can share.
 
-## Projects
+**What I care about**
 
+- Models that hold up in practice: reproducible inputs, drift monitoring, and catching silent bugs before they reach a decision.
+- Fraud and risk problems where the entity matters more than the single transaction.
+- Putting modern AI tooling to work. I run my own MCP servers on a Raspberry Pi and use them with Claude every day.
 
-###  [Bait 'n' Switch](https://github.com/SlimHintz/bait-n-switch)
+**Stack:** Python, PySpark, SQL, XGBoost, scikit-learn, PyOD, MLflow, Delta Lake, Databricks
 
-I analysed three, manually labelled clickbait datasets using natural language processing. Utilizing tf-idf and naive bayes I was able to train a fast, light-weight, and powerful statistical model that identifies clickbait with ~90% accuracy. Using flask and gunicorn, I hosted the model on a heroku server and set up a POST API endpoint. Then, using bootstrap's precompiled destributions of NODE.js and CSS I created a simple front end [web application](https://baitnswitch.herokuapp.com/predict). 
+**Background:** neuroscience at the University of Otago (BSc Hons, First Class), then Flatiron School's data science program. Kiwi, based in metro Detroit.
 
-### [Pediatric Pneuomonia Chest X-Ray Image Classification](https://github.com/SlimHintz/Pneumonia-image-classification)
+### Recent projects
 
-My partner and I built an ensemble, voting-classifier using 3 transfer learning models (VGG16, DenseNet121, MobileNetV2) to predict the presence of pneumonia from x-rays of children's (age 1-5) chests. Given the use case, we optimised for both recall and accuracy. Initially, we optimised for recall and acheived a test prediciton containing no false negatives. However, we also wanted to insure that medical professionals weren't being inundated with false positives so we included accuracy as an evaluation metric.
-- Accuracy: 0.9038
-- Recall: 0.9897
+- **[calc-tutor](https://github.com/SlimHintz/calc-tutor)**: an MCP server and web app that turn Claude into a math tutor. Answers are graded symbolically with SymPy rather than by the model, practice is scheduled with FSRS spaced repetition, and it can read handwritten work from a reMarkable tablet. 845 tests.
+- **[kitchen-inventory-mcp](https://github.com/SlimHintz/kitchen-inventory-mcp)**: a household inventory MCP server where the server keeps the books and the model does the reasoning. It covers fuzzy entity matching, duplicate detection, recipe coverage scoring and first-expiring-first-out depletion, on SQLAlchemy and Alembic.
+- **[garmin-strava-mcp](https://github.com/SlimHintz/garmin-strava-mcp)**: a secured MCP server and REST API over my own Garmin and Strava data (OAuth 2.1 + PKCE, rate limiting), with a SQLite training log, which I use for marathon-training analysis.
+- **[rulefit](https://github.com/SlimHintz/rulefit)**: my fork of RuleFit, modularized and updated for scikit-learn 1.8, with rule extraction, benchmarks and tests. Interpretable rule models are a good fit for fraud work.
 
-### [Factors in Unemployment During the COVID-19-Pandmenic](https://github.com/SlimHintz/Factors-in-Unemployment-During-COVID-19-Pandemic)
+### Earlier work
 
-In late 2019, the world was hit by the Sars-Covid-2. To prevent the spread of the disease, US state governments locked down the economy in March 2020. As a result of the pandemic, millions of people lost their jobs. Using the current population survey (CPS) in additon to information scraped from news sources and covid data from government agencies, this research identified key early indicators that US household may lose their employment and in turn aid in the allocation of resources before the need is dire.
-- The part time workers even holding multiple jobs were hardest hit by unemployment.
-- The older the house hold primary earner was the more likely they were to become unemployed.
-- Interestingly, the industry had people worked had little bearing on the probability of them becoming unemployed.
-
-### [King County Housing Price Predictions](https://github.com/SlimHintz/King-County-Housing)
-
-The present research utilized the Kaggle King County data set to train a linear regression model of housing prices in that region. The model generated 420 features via interactions and polynomial columns as well as some non-linear transformations of the square footage columns. In particular, I utilized geohashing to increase the spatial resolution beyond zipcode and create a more accurate prediction. 
-
-## [Coding Practice](https://github.com/SlimHintz/coding-practice)
-
-I like to continually develop my coding skill set and am currently expanding my knowledge and experience in a variety of languages
-- Python (and it's associated data science libraries)
-- SQL
-- R 
-- C 
-- Octave/Matlab
-- Javascript
-- HTML
-- CSS
-
+- **[bait-n-switch](https://github.com/SlimHintz/bait-n-switch)**: a clickbait headline classifier (tf-idf and naive Bayes, about 90% accuracy) served through a Flask API.
+- **[Pneumonia-image-classification](https://github.com/SlimHintz/Pneumonia-image-classification)**: a voting ensemble of VGG16, DenseNet121 and MobileNetV2 for pediatric chest X-rays, tuned for recall (0.99 recall, 0.90 accuracy).
+- **[credit-card-default-detection](https://github.com/SlimHintz/credit-card-default-detection)**: default prediction on the UCI Taiwan credit-card data, with class rebalancing.
+- **[King-County-Housing](https://github.com/SlimHintz/King-County-Housing)**: house-price regression with geohash features.
